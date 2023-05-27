@@ -88,36 +88,36 @@ textarea {
    ========================================================================== */
 @font-face {
   font-family: "Nova Reg";
-  src: url("../assets/proxima_nova_reg.ttf");
-  src: url("../assets/proxima_nova_reg.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Nova Bold";
-  src: url("../assets/proxima_nova_bold.ttf");
-  src: url("../assets/proxima_nova_bold.ttf") format("truetype");
+  src: url("../assets/proxima_nova.otf");
+  src: url("../assets/proxima_nova.otf") format("opentype");
 }
 body {
-  font-family: sans-serif;
+  font-family: "Nova Reg", sans-serif;
+  height: 100vh;
 }
 nav {
-  border-bottom: 1px solid lightgray;
-  padding: 0 20px;
+  border-bottom: 1px solid #f1f2f4;
+  padding: 0 40px;
 }
 .container2 {
   text-align: left;
-}
-.container > * {
-  padding: 10px 20px;
+  background-color: #f2f6fa;
+  padding: 0 40px;
+  min-height: calc(100% - 153px);
+  position: relative;
+  display: block;
 }
 .container2 > * {
-  padding: 10px 20px;
+  padding: 10px 8px;
 }
 .title {
   font-size: 16px;
   font-weight: bold;
-  border-bottom: 1px solid lightgray;
+  /* border-bottom: 1px solid lightgray; */
+  box-shadow: 0 1px 2px 0 rgba(83, 107, 140, 0.15);
   line-height: 2;
   margin-top: 5px;
+  padding: 10px 50px;
 }
 nav div {
   height: 100px;
@@ -129,12 +129,14 @@ nav div img {
   margin-top: 5px;
 }
 .wrapper1 {
-  width: 400px;
+  min-width: 340px;
   display: inline-block;
   text-align: left;
+  width: calc(100% - 19px);
+  max-width: 600px;
 }
 .wrapper {
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   -moz-box-shadow: 0 0 3px #c2c2c2;
   -webkit-box-shadow: 0 0 3px #c2c2c2;
@@ -143,6 +145,8 @@ nav div img {
   padding: 20px;
   height: 110px;
   position: relative;
+  border: 5px solid white;
+  background-color: white;
 }
 .wrapper > * {
   vertical-align: middle;
@@ -168,8 +172,8 @@ nav div img {
   margin: auto;
 }
 .wrapper .man-image {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   display: inline-block;
   border-radius: 50%;
   padding: 0;
@@ -178,12 +182,12 @@ nav div img {
 .wrapper i.ben,
 .wrapper i.manager {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  margin-bottom: -4px;
+  margin-bottom: -2px;
 }
 .wrapper i.ben {
   background-image: url("../img/bens.png");
@@ -233,13 +237,12 @@ nav div img {
   padding: 10px;
   outline: none;
   border: none;
-  border-radius: 8px;
   color: white;
-  background-image: linear-gradient(to bottom, #15c2e8, #0094ca);
-  border: 1px solid #8ae2f4;
   opacity: 1;
   font-size: 14px;
   margin-top: 15px;
+  border-radius: 6px;
+  background-image: linear-gradient(to bottom, #1bd2f2 -27%, #0091c8);
 }
 
 .wrapper button:hover {
@@ -252,19 +255,19 @@ nav div img {
 .wrapper .info p {
   line-height: 1;
   color: #999;
-  font-size: 12px;
+  font-size: 13px;
   margin: auto;
 }
 
-@media screen and (min-width: 600px) {
-  /* .container2 {
-    flex-wrap: nowrap;
-    justify-content: space-between;
+@media screen and (min-width: 800px) {
+  .wrapper1 {
+    width: calc(50% - 19px);
   }
-  .container2 > * {
-    max-width: 150px;
-    width: 150px;
-  } */
+}
+@media screen and (min-width: 1170px) {
+  .wrapper1 {
+    width: calc(33.33% - 19px);
+  }
 }
 /*============================================================*/
 
@@ -323,6 +326,7 @@ nav div img {
   font-size: 13px;
   padding: 6px 5px;
 }
+
 .kebab-list.active {
   display: initial;
 }
