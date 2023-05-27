@@ -117,7 +117,7 @@ nav {
   box-shadow: 0 1px 2px 0 rgba(83, 107, 140, 0.15);
   line-height: 2;
   margin-top: 5px;
-  padding: 10px 50px;
+  padding: 10px 20px;
 }
 nav div {
   height: 100px;
@@ -260,6 +260,9 @@ nav div img {
 }
 
 @media screen and (min-width: 800px) {
+  .title {
+    padding: 10px 50px;
+  }
   .wrapper1 {
     width: calc(50% - 19px);
   }
