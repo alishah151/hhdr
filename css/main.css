@@ -91,8 +91,18 @@ textarea {
   src: url("../assets/proxima_nova.otf");
   src: url("../assets/proxima_nova.otf") format("opentype");
 }
+@font-face {
+  font-family: "metropolisbold";
+  src: url("../assets/metropolisbold.otf");
+  src: url("../assets/metropolisbold.otf") format("opentype");
+}
+@font-face {
+  font-family: "metropolis";
+  src: url("../assets/metropolisreg.otf");
+  src: url("../assets/metropolisreg.otf") format("opentype");
+}
 body {
-  font-family: "Nova Reg", sans-serif;
+  font-family: "metropolis", sans-serif;
   height: 100vh;
 }
 nav {
@@ -112,8 +122,7 @@ nav {
 }
 .title {
   font-size: 16px;
-  font-weight: bold;
-  /* border-bottom: 1px solid lightgray; */
+  font-family: "metropolisbold", sans-serif;
   box-shadow: 0 1px 2px 0 rgba(83, 107, 140, 0.15);
   line-height: 2;
   margin-top: 5px;
@@ -170,6 +179,7 @@ nav div img {
 .wrapper .info h3 {
   font-size: 14px;
   margin: auto;
+  font-family: "metropolisbold", sans-serif;
 }
 .wrapper .man-image {
   width: 16px;
