@@ -141,7 +141,7 @@ nav div img {
   box-shadow: 2px 2px 4px #c2c2c2;
   font-size: 0;
   padding: 20px;
-  height: 120px;
+  height: 110px;
   position: relative;
 }
 .wrapper > * {
@@ -161,6 +161,7 @@ nav div img {
   padding-left: 10px;
   width: calc(80% - 20px);
   display: inline-block;
+  margin-top: -20px;
 }
 .wrapper .info h3 {
   font-size: 14px;
@@ -238,7 +239,7 @@ nav div img {
   border: 1px solid #8ae2f4;
   opacity: 1;
   font-size: 14px;
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 .wrapper button:hover {
