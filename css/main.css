@@ -180,6 +180,7 @@ nav div img {
   font-size: 14px;
   margin: auto;
   font-family: "metropolisbold", sans-serif;
+  margin-bottom: 2px;
 }
 .wrapper .man-image {
   width: 16px;
@@ -214,6 +215,25 @@ nav div img {
   left: 0;
   right: 0;
 }
+
+.wrapper .img img.comp1 {
+  width: 55px;
+}
+.wrapper .img img.comp2 {
+  width: 53px;
+}
+.wrapper .img img.comp3 {
+  width: 68px;
+}
+.wrapper .img img.comp4 {
+  width: 55px;
+}
+.wrapper .img img.comp5 {
+  width: 69px;
+}
+.wrapper .img img.comp8 {
+  width: 48px;
+}
 .wrapper1:nth-child(1) .img {
   background-color: #fce8e8;
 }
@@ -236,7 +256,7 @@ nav div img {
   background-color: #dffae2;
   color: #06c221;
   font-weight: bold;
-  padding: 5px 10px 2px;
+  padding: 3px 10px 2px;
   display: inline-block;
   height: 20px;
   line-height: 20px;
@@ -267,6 +287,9 @@ nav div img {
   color: #999;
   font-size: 13px;
   margin: auto;
+}
+.wrapper .info p.p2 {
+  margin-top: 2px;
 }
 
 @media screen and (min-width: 800px) {
