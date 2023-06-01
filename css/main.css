@@ -262,7 +262,8 @@ nav div img {
   line-height: 20px;
   border-radius: 20px;
 }
-.wrapper button {
+.wrapper a {
+  display: inline-block;
   width: 100%;
   padding: 10px;
   outline: none;
@@ -273,13 +274,16 @@ nav div img {
   margin-top: 15px;
   border-radius: 6px;
   background-image: linear-gradient(to bottom, #1bd2f2 -27%, #0091c8);
+  text-align: center;
+  line-height: 16px;
+  text-decoration: none;
 }
 
-.wrapper button:hover {
+.wrapper a:hover {
   opacity: 0.6;
 }
 
-.wrapper button:active {
+.wrapper a:active {
   opacity: 0.8;
 }
 .wrapper .info p {
